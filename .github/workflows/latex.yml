@@ -1,0 +1,20 @@
+name: Typeset
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Typeset LaTeX document
+      uses: xu-cheng/latex-action@master
+      with:
+        root_file: main.tex
+    - name: Upload PDF to artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: paper.pdf
+        path: main.pdf

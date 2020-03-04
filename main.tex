@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{template/acl2020}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{url}
+
+% Table packages
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% AMS packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% CJK support
+\usepackage{CJKutf8}
+
+% Graphics
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+
+% Layout optimization
+\usepackage{microtype}
+\usepackage{xspace}
+\renewcommand{\UrlFont}{\ttfamily\small}
+
+% Customized commands
+\newcommand\lorem{\textsc{Lorem}\xspace}
+\newcommand\BibTeX{B\textsc{ib}\TeX}
+
+% Title
+\title{Hyperparameter Tuning with Necromancy}
+
+% Authors and contacts
+\author{Yichao Ji\\
+    Scholomance, Western Plaguelands, Eastern Kingdoms\\
+    \texttt{peakji@scholomance.edu}
+}
+\date{}
+
+% ACL template macros
+\aclfinalcopy % Uncomment this line for the final submission
+%\def\aclpaperid{***} %  Enter the acl Paper ID here
+
+\begin{document}
+\maketitle
+
+% Abstract
+\begin{abstract}
+    \input{sections/abstract}
+\end{abstract}
+
+% Main
+\input{sections/intro}
+\input{sections/related}
+\input{sections/method}
+\input{sections/experiment}
+\input{sections/conclusion}
+
+% Bibliography
+\bibliography{bibliography/related,bibliography/method}
+\bibliographystyle{template/acl_natbib}
+
+% Appendix
+\appendix
+\input{sections/appendix}
+\input{sections/supplemental}
+
+\end{document}
